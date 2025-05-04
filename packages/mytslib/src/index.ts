@@ -1,1 +1,1 @@
-export * from './lib/mytslib.js';
+export * from './lib/mytslib';

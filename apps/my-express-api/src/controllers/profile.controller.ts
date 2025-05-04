@@ -7,14 +7,14 @@ export const getProfiles = async (req: Request, res: Response) => {
 };
 
 export const createProfile = async (req: Request, res: Response) => {
-    const { name, email, phone } = req.body;
-    const profile = await prisma.profile.create({ data: { name, email, phone } });
+    const { firstName, lastName, email, phone, username, languages } = req.body;
+    const profile = await prisma.profile.create({ data: { firstName, lastName, email, phone, username, languages } });
     res.status(201).json(profile);
 };
 
 export const updateProfile = async (req: Request, res: Response) => {
-    const { id, name, email, phone } = req.body;
-    const profile = await prisma.profile.update({ where: { id }, data: { name, email, phone } });
+    const { id, firstName, lastName, email, phone, username, languages } = req.body;
+    const profile = await prisma.profile.update({ where: { id }, data: { firstName, lastName, email, phone, username, languages } });
     res.status(200).json(profile);
 };
 

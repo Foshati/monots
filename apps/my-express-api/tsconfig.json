@@ -4,6 +4,9 @@
   "include": [],
   "references": [
     {
+      "path": "../../packages/mytslib"
+    },
+    {
       "path": "./tsconfig.app.json"
     }
   ]
