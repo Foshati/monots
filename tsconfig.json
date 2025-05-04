@@ -2,5 +2,21 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./apps/my-express-api-e2e"
+    },
+    {
+      "path": "./apps/my-express-api"
+    },
+    {
+      "path": "./packages/mytslib"
+    },
+    {
+      "path": "./packages/mytslib"
+    },
+    {
+      "path": "./packages/mytslib"
+    }
+  ]
 }
