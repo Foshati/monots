@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import profileRouter from './routes/profile.router';
+import profileRouter from './routes/profile.router.js';
 import path from 'path';
 import { apiReference } from '@scalar/express-api-reference'
 

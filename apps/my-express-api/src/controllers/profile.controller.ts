@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { prisma } from '@monots/mytslib';
+import { prisma } from '../../../../packages/mytslib/src/lib/mytslib.js';
 
 export const getProfiles = async (req: Request, res: Response) => {
     const profiles = await prisma.profile.findMany();
